@@ -10,7 +10,7 @@ function registerOwner() {
 
 
 
-  console.log('book: ', book);
+  console.log('owner: ', owner);
 
   $.ajax({
     type: 'POST',
