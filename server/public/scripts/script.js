@@ -26,6 +26,8 @@ function registerOwner() {
 
 }
 
+$('#add-pet').on('click', registerPets);
+
 function registerPets() {
   event.preventDefault();
 
