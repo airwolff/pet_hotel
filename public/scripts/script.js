@@ -45,6 +45,9 @@ function registerPets() {
 
 
 
+
+
+
   console.log('pets: ', pets);
 
   $.ajax({
@@ -101,7 +104,7 @@ function nameDropDown(ownersTable){
     var firstName = ownersTable[i].first_name;
     var lastName = ownersTable[i].last_name;
     console.log(firstName);
-    $('.ownerDrop').append('<option value="'+ ownersTable[i].id +' ">'+ firstName +' '+ lastName+' </option>');
+    $('.ownerDrop').append('<option value="'+ ownersTable[i].id +'">'+ firstName +' '+ lastName+' </option>');
   }
   $('.ownerDrop').change(function(){
     var dropSelect = $(this).val();
