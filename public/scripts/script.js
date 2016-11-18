@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//getTableData();
+getOwners();
 $('#owner-submit').on('click', registerOwner);
 
 function registerOwner() {
@@ -98,15 +98,12 @@ function getOwners(){
 }
 function nameDropDown(ownersTable){
   $('.ownerDrop').empty();
-
   for (var i = 0; i < ownersTable.length; i++) {
     var firstName = ownersTable[i].first_name;
     var lastName = ownersTable[i].last_name;
     console.log(firstName);
     $('.ownerDrop').append('<option value="'+ ownersTable[i].id +' ">'+ firstName +' '+ lastName+' </option>');
   }
-
-  console.log(ownersTable);
   $('.ownerDrop').change(function(){
     var dropSelect = $(this).val();
     console.log("change drop", dropSelect);
