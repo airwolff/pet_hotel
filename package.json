@@ -1,0 +1,26 @@
+{
+  "name": "pet_hotel",
+  "version": "1.0.0",
+  "description": "PETS HOTEL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airwolff/pet_hotel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airwolff/pet_hotel/issues"
+  },
+  "homepage": "https://github.com/airwolff/pet_hotel#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "pg": "^6.1.0"
+  }
+}

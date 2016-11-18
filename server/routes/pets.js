@@ -25,6 +25,7 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
+	console.log("server side POST beginning");
 	var newPet = req.body;
 	console.log(req);
 	pg.connect(connectionString, function (err, client, done) {
@@ -34,8 +35,8 @@ router.post('/', function (req, res) {
 		}
 
 		client.query(
-			'INSERT INTO pets (name, breed, color) ' +
-			'VALUES ($1, $2, $3)', [newPet.name, newPet.breed, newPet.color],
+			'INSERT INTO pets (pet_name, pet_breed, pet_color) ' +
+			'VALUES ($1, $2, $3)', [newPet.pet_name, newPet.pet_breed, newPet.pet_color],
 			function (err, result) {
 				done();
 
