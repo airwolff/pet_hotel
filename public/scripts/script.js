@@ -97,7 +97,6 @@ function getOwners(){
   })
 }
 function nameDropDown(ownersTable){
-  $('.ownerDrop').empty();
   for (var i = 0; i < ownersTable.length; i++) {
     var firstName = ownersTable[i].first_name;
     var lastName = ownersTable[i].last_name;
