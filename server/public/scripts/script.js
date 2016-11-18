@@ -1,3 +1,5 @@
+$('#owner-submit').on('click', registerOwner);
+
 function registerOwner() {
   event.preventDefault();
 
