@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Team Paws Pet Hotel</title>
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Owners and Pets</h1>
+      </header>
+      <h2>Owner Registration</h2>
+          <form id="owner-form">
+            <div class="form-group">
+              <label for="first_name">First Name:</label>
+              <input type="text" id="first_name" name="first_name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="last_name">Last Name:</label>
+              <input type="text" id="last_name" name="last_name" class="form-control" />
+            </div>
+
+            <button id="owner-submit" class="btn btn-default">Register!</button>
+          </form>
+
+      <h2>Pets</h2>
+        <form id="pets-form">
+          <div class="form-group">
+            <label for="pet_name">Pet Name:</label>
+            <input type="text" id="pet_name" name="pet_name" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label for="pet_breed">Breed:</label>
+            <input type="text" id="pet_breed" name="pet_breed" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label for="pet_color">Color:</label>
+            <input type="text" id="pet_color" name="pet_color" class="form-control" />
+          </div>
+
+          <button id="add-pet" class="btn btn-default">Add Pet!</button>
+        </form>
+    </main>
+  </body>
+</html>
